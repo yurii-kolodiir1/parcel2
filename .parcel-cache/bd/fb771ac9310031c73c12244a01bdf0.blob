@@ -1,0 +1,12 @@
+"use strict";
+var __signature__ = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default.signature : function (a) {
+  return a;
+};
+var Refresh = require('react-refresh/runtime');
+Refresh.injectIntoGlobalHook(window);
+window.$RefreshReg$ = function () {};
+window.$RefreshSig$ = function () {
+  return function (type) {
+    return type;
+  };
+};

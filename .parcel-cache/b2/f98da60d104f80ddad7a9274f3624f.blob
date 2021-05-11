@@ -1,0 +1,62 @@
+"use strict";
+var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = void 0;
+  var _react = _interopRequireDefault(require("react"));
+  var _propTypes = _interopRequireDefault(require("prop-types"));
+  require("./slicer.scss");
+  require("./cracked.css");
+  function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+      default: obj
+    };
+  }
+  (function () {
+    var enterModule = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.enterModule : undefined;
+    enterModule && enterModule(module);
+  })();
+  var __signature__ = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default.signature : function (a) {
+    return a;
+  };
+  const Cracked = ({children}) => /*#__PURE__*/_react.default.createElement("div", {
+    className: "bg-text"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "slicer-gradient"
+  }, new Array(40).fill(1).map((_, i) => /*#__PURE__*/_react.default.createElement("div", {
+    key: `slice-${i + 1}`,
+    className: "text"
+  }, children))));
+  _c = Cracked;
+  Cracked.propTypes = {
+    children: _propTypes.default.node.isRequired
+  };
+  const _default = Cracked;
+  var _default2 = _default;
+  exports.default = _default2;
+  var _c;
+  $RefreshReg$(_c, "Cracked");
+  ;
+  (function () {
+    var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined;
+    if (!reactHotLoader) {
+      return;
+    }
+    reactHotLoader.register(Cracked, "Cracked", "/Users/ykolodiy/projects/react-webpack-parcel/parcel2/parcel2/src/components/Animation/Cracked.jsx");
+    reactHotLoader.register(_default, "default", "/Users/ykolodiy/projects/react-webpack-parcel/parcel2/parcel2/src/components/Animation/Cracked.jsx");
+  })();
+  ;
+  (function () {
+    var leaveModule = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.leaveModule : undefined;
+    leaveModule && leaveModule(module);
+  })();
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

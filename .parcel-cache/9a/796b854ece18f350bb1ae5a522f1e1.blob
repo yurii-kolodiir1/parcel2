@@ -1,0 +1,51 @@
+"use strict";
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = void 0;
+  var _react = _interopRequireDefault(require("react"));
+  var _Cracked = _interopRequireDefault(require("../components/Animation/Cracked"));
+  require("./Landing.css");
+  function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+      default: obj
+    };
+  }
+  (function () {
+    var enterModule = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.enterModule : undefined;
+    enterModule && enterModule(module);
+  })();
+  var __signature__ = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default.signature : function (a) {
+    return a;
+  };
+  const Landing = () => /*#__PURE__*/_react.default.createElement(_Cracked.default, null, "parcel-project");
+  _c = Landing;
+  const _default = Landing;
+  var _default2 = _default;
+  exports.default = _default2;
+  var _c;
+  $RefreshReg$(_c, "Landing");
+  ;
+  (function () {
+    var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined;
+    if (!reactHotLoader) {
+      return;
+    }
+    reactHotLoader.register(Landing, "Landing", "/Users/ykolodiy/projects/react-webpack-parcel/parcel2/parcel2/src/pages/Landing.jsx");
+    reactHotLoader.register(_default, "default", "/Users/ykolodiy/projects/react-webpack-parcel/parcel2/parcel2/src/pages/Landing.jsx");
+  })();
+  ;
+  (function () {
+    var leaveModule = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.leaveModule : undefined;
+    leaveModule && leaveModule(module);
+  })();
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
